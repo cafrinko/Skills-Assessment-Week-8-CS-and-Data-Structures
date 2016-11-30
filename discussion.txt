@@ -1,0 +1,56 @@
+Part 1: Discussion Questions
+
+
+Runtime
+
+When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches infinity.You can think of the workload as the number of tasks required to complete a job. What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity:
+O(1)
+O(log n)
+O(n)
+O(n log n)
+O(n2)
+O(2n) (i.e. 2 to the n-th power)
+
+
+Stacks and Queues
+
+In the following cases, would a stack or queue be a more appropriate data structure?
+    The process of loading and unloading pallets onto a flatbed truck
+        Stack
+    Putting bottle caps on bottles of beer as they roll down an assembly line
+        Queue
+    Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2)
+        Queue
+    Describe two more situations where a queue would be an appropriate data structure.
+        Serving customers by ticket number at a deli counter
+        Stacking plates and unstacking plates
+    Describe two more situations where a stack would be an appropriate data structure.
+        Putting on clothes and taking them off
+        Making a rubber band ball and taking it apart
+
+
+Linked Lists
+
+Given the linked list below, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?)
+    Nodes are the boxes labeled Apple, Berry, and Cherry
+    Data is text inside of node boxes: "Apple", "Berry", and "Cherry"
+    Head is pointing at the Apple node
+    There is no tail in the diagram, but if a tail attribute was added to the class, then it would be pointing at Cherry
+
+What’s the difference between doubly- and singly-linked lists?
+    Each node in singly-linked lists have references to the next node, and in doubly-linked lists, each node has a reference to the next node and the previous node.
+Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+    We don't have to traverse through the entire list starting with the first node each time we want to append to the end of the list to reach the node whose next attribute points to none. We can just target the tail node and apply the next attribute to it to give the new node its position assignment at the end of the list.
+
+
+Trees
+
+Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burrito (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+    Italian, Indian, Mexican, lasagna, pizza, tikka masala, saag, burrito
+
+Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+    Italian, Indian, Mexican, burrito, tacos, enchiladas, tikka masala, saag, lasagna, pizza, thin crust, Chicago-style
+
+How is a binary search tree different from other trees?
+    Each node of the tree has left and right node children, and children to the left come chronologically before children to the right, so binary trees enable fast searching
